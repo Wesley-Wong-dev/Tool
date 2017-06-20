@@ -76,6 +76,15 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QGraphicsViewEx.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="QDRuler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QDRuler.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QDRuler.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Tools.h">
@@ -88,6 +97,9 @@
       <Filter>Resource Files</Filter>
     </CustomBuild>
     <CustomBuild Include="QGraphicsViewEx.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QDRuler.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

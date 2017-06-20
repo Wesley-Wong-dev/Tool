@@ -46,7 +46,7 @@ public:
     QPushButton *btn_Up;
     QPushButton *btn_Down;
     QLabel *lb_Count;
-    QGraphicsViewEx *G_View;
+	QGraphicsViewEx *G_View;
     QGroupBox *groupBox_2;
     QLabel *lb_ImgReport;
     QComboBox *cmb_Seg;
@@ -127,7 +127,7 @@ public:
         lb_Count->setGeometry(QRect(520, 310, 47, 13));
         G_View = new QGraphicsViewEx(groupBox);
         G_View->setObjectName(QStringLiteral("G_View"));
-        G_View->setGeometry(QRect(130, 330, 541, 201));
+        G_View->setGeometry(QRect(140, 50, 541, 201));
         groupBox_2 = new QGroupBox(ToolsClass);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(0, 580, 701, 171));

@@ -1,6 +1,7 @@
 #pragma once
 #include <QGraphicsView>
 #include <QPainter>
+#include "QDRuler.h"
 
 class QGraphicsViewEx : public QGraphicsView
 {
@@ -13,9 +14,9 @@ public:
         QGraphicsItem *items[],
         const QStyleOptionGraphicsItem options[]);
     void resizeEvent(QResizeEvent *);
+	//void setViewportMargins(int left, int top, int right, int bottom);
 private:
-    QColor m_theBackLienColor;
-    QColor m_thePointColor;
-    QColor m_theBackColor;
+	QDRuler* m_lpHorzRuler;
+	QDRuler* m_lpVertRuler;
 };
 
