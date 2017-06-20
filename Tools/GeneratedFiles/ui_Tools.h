@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -24,6 +25,7 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QTextEdit>
+#include "QGraphicsViewEx.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -44,6 +46,7 @@ public:
     QPushButton *btn_Up;
     QPushButton *btn_Down;
     QLabel *lb_Count;
+    QGraphicsViewEx *G_View;
     QGroupBox *groupBox_2;
     QLabel *lb_ImgReport;
     QComboBox *cmb_Seg;
@@ -77,10 +80,10 @@ public:
         ToolsClass->resize(1063, 760);
         groupBox = new QGroupBox(ToolsClass);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(10, 10, 691, 481));
+        groupBox->setGeometry(QRect(10, 0, 691, 551));
         lb_IMG = new QLabel(groupBox);
         lb_IMG->setObjectName(QStringLiteral("lb_IMG"));
-        lb_IMG->setGeometry(QRect(10, 10, 671, 261));
+        lb_IMG->setGeometry(QRect(10, 10, 91, 61));
         Edit_Zoom = new QTextEdit(groupBox);
         Edit_Zoom->setObjectName(QStringLiteral("Edit_Zoom"));
         Edit_Zoom->setGeometry(QRect(160, 280, 51, 31));
@@ -122,6 +125,9 @@ public:
         lb_Count = new QLabel(groupBox);
         lb_Count->setObjectName(QStringLiteral("lb_Count"));
         lb_Count->setGeometry(QRect(520, 310, 47, 13));
+        G_View = new QGraphicsViewEx(groupBox);
+        G_View->setObjectName(QStringLiteral("G_View"));
+        G_View->setGeometry(QRect(130, 330, 541, 201));
         groupBox_2 = new QGroupBox(ToolsClass);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(0, 580, 701, 171));

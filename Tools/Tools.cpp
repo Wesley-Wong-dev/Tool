@@ -72,6 +72,13 @@ Tools::Tools(QWidget *parent)
     ui.LV_List->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui.LV_List->setSelectionBehavior(QAbstractItemView::SelectRows);
     m_nIndex = 0;
+
+    //////////////////////////////////////////////////////////////////////////
+    QGraphicsScene* scene = new QGraphicsScene;
+    scene->addText("Hello,world");
+    //ui.G_View->setScene(scene);
+    
+    //ui.G_View->show();
 }
 
 void Tools::on_btn_Load_clicked()
