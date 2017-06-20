@@ -240,3 +240,16 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Tools/lib/libjpegd.lib
+/Tools/lib/libtiff.lib
+/Tools/lib/libtiffd.lib
+/Tools/lib/OpenCVConfig-version.cmake
+/Tools/lib/OpenCVConfig.cmake
+/Tools/lib/OpenCVModules-debug.cmake
+/Tools/lib/OpenCVModules-release.cmake
+/Tools/lib/OpenCVModules.cmake
+/Tools/lib/opencv_world320.lib
+/Tools/lib/opencv_world320d.lib
+/Tools/lib/zlibd.lib
+/Tools/test.box
+/Tools/test.tif

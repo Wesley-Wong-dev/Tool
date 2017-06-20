@@ -38,6 +38,9 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{fca33f19-5dc9-478c-8b16-015b806e3df9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,6 +58,15 @@
     <ClCompile Include="GeneratedFiles\qrc_Tools.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="BaseApi.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgOpt.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="TiffHelper.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Tools.h">
@@ -70,6 +82,15 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_Tools.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseApi.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgOpt.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="TiffHelper.h">
+      <Filter>API</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
